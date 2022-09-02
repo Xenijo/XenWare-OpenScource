@@ -2,7 +2,7 @@
 
 
 
-Hello the fact that xenware got canceled, is enought reason for me to Give you accest to my scource. i codet it very shity and unclean sorry :(...
+Hello the fact that xenware got canceled, is enought reason for me to Give you acces to my scource. i codet it very shity and unclean sorry :(...
 
 
 Thx to all my Supporters i love you all :
