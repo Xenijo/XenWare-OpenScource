@@ -8,7 +8,7 @@ if game.PlaceId == 7167319176 then
 
 
         local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-        local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/Random-Scripts/main/Utility"))()
+        
 
         local player = game:GetService("Players").LocalPlayer
 
