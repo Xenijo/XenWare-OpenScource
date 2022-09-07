@@ -1,5 +1,5 @@
 
-Here my shit code
+--//Here my shit code
 
 
 if game.PlaceId == 7167319176 then
