@@ -40,7 +40,7 @@ if game.PlaceId == 7167319176 then
         _G.FOV = 0
         _G.Prediction = (0.01)
 
-        local Farms = Library:NewWindow("Main")
+        local Farms = Library:NewWindow("XenWareV1")
 
         local Combat = Farms:NewSection("Combat")
 
