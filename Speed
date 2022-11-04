@@ -1,6 +1,4 @@
-while wait() do 
-_G.Key = _G.Key
-end
+
 
 
 local Player = game:GetService("Players").LocalPlayer;
