@@ -71,7 +71,7 @@ function silentaim(fov)
                             local World, ToSpace = workspace:FindPartOnRayWithIgnoreList(RayCast, {LocalPlayer.Character:FindFirstChild("Head")})
                             local RootWorld = (Enemy[Options.Head].CFrame.Position - ToSpace).magnitude
                             if RootWorld < 4 then
-                                local RootPartPosition, Visible = Camera:WorldToScreenPoint(Enemy[Options.Torso].Position)
+                                local RootPartPosition, Visible = Camera:WorldToScreenPoint(Enemy[Options.Head].Position)
                                 if Visible then
                                     local Real_Magnitude = (Vector2.new(Mouse.X, Mouse.Y) - Vector2.new(RootPartPosition.X, RootPartPosition.Y)).Magnitude
                                     if Real_Magnitude < Distance and Real_Magnitude < FOV_CIRCLE.Radius then
