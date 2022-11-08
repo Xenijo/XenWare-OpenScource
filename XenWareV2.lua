@@ -70,6 +70,9 @@ if game.PlaceId == 7167319176 then
     _G.ATM = false
     _G.FOV = 0
     _G.Prediction = (0.01)
+    local MaxDis = 15
+    local prt = game:GetService("Workspace").Map.Jobs.Bartender.BottleGroup.Bottle
+    local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
 
     local Farms = Library:NewWindow("XenWareV2 Made By:Xenijo")
 
@@ -201,8 +204,27 @@ if game.PlaceId == 7167319176 then
             else
                 print("Start")
                 _G.AutoFarm4 = true
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
-                    game:GetService("Workspace").Map.Jobs.Bartender.BottleGroup.Bottle.CFrame
+             
+                
+                
+                
+                if (prt.Position - torso.Position).magnitude > MaxDis then 
+                 
+                local New_CFrame =  prt.CFrame
+                                local ts = game:GetService("TweenService")
+                                local char = game.Players.LocalPlayer.Character
+                
+                                local part = char.HumanoidRootPart
+                                local ti = TweenInfo.new(8, Enum.EasingStyle.Linear)
+                                local tp = {CFrame = New_CFrame * CFrame.new(0, 1, 2)}
+                                local tween = ts:Create(part, ti, tp)
+                                tween:Play()
+                                tween.Completed:wait()
+                elseif (prt.Position - torso.Position).magnitude < MaxDis then 
+                    torso.CFrame = prt.CFrame
+                    
+                end
+
                 while _G.AutoFarm4 == true do
                     fireclickdetector(
                         game:GetService("Workspace").Map.Jobs.Bartender.BottleGroup.ClickDetector,
@@ -252,13 +274,14 @@ if game.PlaceId == 7167319176 then
                 print("Start")
                 _G.AutoFarm3 = true
                 while _G.AutoFarm3 == true do
+           
                     local New_CFrame = game:GetService("Workspace").Map.Jobs.InAndOut.FrieWork.CFrame
                     local ts = game:GetService("TweenService")
                     local char = game.Players.LocalPlayer.Character
 
                     local part = char.HumanoidRootPart
-                    local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
-                    local tp = {CFrame = New_CFrame * CFrame.new(0, 1, 2)}
+                    local ti = TweenInfo.new(6, Enum.EasingStyle.Linear)
+                    local tp = {CFrame = New_CFrame * CFrame.new(-15, 0, 0)}
                     local tween = ts:Create(part, ti, tp)
                     tween:Play()
                     tween.Completed:wait()
@@ -1111,5 +1134,4 @@ end )
             end)
         end
     end)
-
 end
