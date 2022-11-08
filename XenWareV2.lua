@@ -103,7 +103,7 @@ if game.PlaceId == 7167319176 then
                 local char = game.Players.LocalPlayer.Character
 
                 local part = char.HumanoidRootPart
-                local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+                local ti = TweenInfo.new(8, Enum.EasingStyle.Linear)
                 local tp = {CFrame = New_CFrame * CFrame.new(2, 0, 0)}
                 local tween = ts:Create(part, ti, tp)
                 tween:Play()
