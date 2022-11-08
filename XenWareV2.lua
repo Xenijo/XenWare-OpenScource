@@ -156,8 +156,27 @@ if game.PlaceId == 7167319176 then
                 print("Start")
                 _G.AutoFarm2 = true
                 while _G.AutoFarm2 == true do
-                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
-                        game:GetService("Workspace").Map.Jobs.Deliver.Pickup.Graffiti.CFrame
+                
+                      
+                       local plr = game.Players.LocalPlayer
+                        local hum = plr.Character.HumanoidRootPart
+                        local speed = 300
+
+                        local function tweenTo(Dest_CFrame)
+                            local twn =
+                                game:GetService("TweenService"):Create(
+                                hum,
+                                TweenInfo.new(
+                                    (Dest_CFrame.p - hum.Position).Magnitude / speed,
+                                    Enum.EasingStyle.Linear
+                                ),
+                                {CFrame = Dest_CFrame}
+                            )
+                            twn:Play()
+                            twn.Completed:Wait()
+                        end
+
+                        tweenTo(CFrame.new( game:GetService("Workspace").Map.Jobs.Deliver.Pickup.Graffiti.Position) * CFrame.new(0,5,0))
 
                     fireclickdetector(
                         game:GetService("Workspace").Map.Jobs.Deliver.Pickup.Graffiti.ClickDetector,
