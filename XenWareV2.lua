@@ -70,7 +70,7 @@ if game.PlaceId == 7167319176 then
     _G.ATM = false
     _G.FOV = 0
     _G.Prediction = (0.01)
-    local MaxDis = 15
+    local MaxDis = 10
     local prt = game:GetService("Workspace").Map.Jobs.Bartender.BottleGroup.Bottle
     local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
 
@@ -210,16 +210,27 @@ if game.PlaceId == 7167319176 then
                 
                 if (prt.Position - torso.Position).magnitude > MaxDis then 
                  
-                local New_CFrame =  prt.CFrame
-                                local ts = game:GetService("TweenService")
-                                local char = game.Players.LocalPlayer.Character
-                
-                                local part = char.HumanoidRootPart
-                                local ti = TweenInfo.new(8, Enum.EasingStyle.Linear)
-                                local tp = {CFrame = New_CFrame * CFrame.new(0, 1, 2)}
-                                local tween = ts:Create(part, ti, tp)
-                                tween:Play()
-                                tween.Completed:wait()
+                 local plr = game.Players.LocalPlayer
+                        local hum = plr.Character.HumanoidRootPart
+                        local speed = 300
+
+                        local function tweenTo(Dest_CFrame)
+                            local twn =
+                                game:GetService("TweenService"):Create(
+                                hum,
+                                TweenInfo.new(
+                                    (Dest_CFrame.p - hum.Position).Magnitude / speed,
+                                    Enum.EasingStyle.Linear
+                                ),
+                                {CFrame = Dest_CFrame}
+                            )
+                            twn:Play()
+                            twn.Completed:Wait()
+                        end
+
+                        tweenTo(CFrame.new(part.Position) * CFrame.new(0,5,0))
+
+                        wait(0.5)
                 elseif (prt.Position - torso.Position).magnitude < MaxDis then 
                     torso.CFrame = prt.CFrame
                     
@@ -275,16 +286,27 @@ if game.PlaceId == 7167319176 then
                 _G.AutoFarm3 = true
                 while _G.AutoFarm3 == true do
            
-                    local New_CFrame = game:GetService("Workspace").Map.Jobs.InAndOut.FrieWork.CFrame
-                    local ts = game:GetService("TweenService")
-                    local char = game.Players.LocalPlayer.Character
+                    local plr = game.Players.LocalPlayer
+                        local hum = plr.Character.HumanoidRootPart
+                        local speed = 300
 
-                    local part = char.HumanoidRootPart
-                    local ti = TweenInfo.new(6, Enum.EasingStyle.Linear)
-                    local tp = {CFrame = New_CFrame * CFrame.new(-15, 0, 0)}
-                    local tween = ts:Create(part, ti, tp)
-                    tween:Play()
-                    tween.Completed:wait()
+                        local function tweenTo(Dest_CFrame)
+                            local twn =
+                                game:GetService("TweenService"):Create(
+                                hum,
+                                TweenInfo.new(
+                                    (Dest_CFrame.p - hum.Position).Magnitude / speed,
+                                    Enum.EasingStyle.Linear
+                                ),
+                                {CFrame = Dest_CFrame}
+                            )
+                            twn:Play()
+                            twn.Completed:Wait()
+                        end
+
+                        tweenTo(CFrame.new(part.Position) * CFrame.new(0,5,0))
+
+                        wait(0.5)
 
                     fireproximityprompt(
                         game:GetService("Workspace").Map.Jobs.InAndOut.FrieWork.ProximityAttachment.ProximityPrompt,
