@@ -160,7 +160,7 @@ if game.PlaceId == 7167319176 then
                       
                        local plr = game.Players.LocalPlayer
                         local hum = plr.Character.HumanoidRootPart
-                        local speed = 300
+                        local speed = 80
 
                         local function tweenTo(Dest_CFrame)
                             local twn =
@@ -231,7 +231,7 @@ if game.PlaceId == 7167319176 then
                  
                  local plr = game.Players.LocalPlayer
                         local hum = plr.Character.HumanoidRootPart
-                        local speed = 300
+                        local speed = 80
 
                         local function tweenTo(Dest_CFrame)
                             local twn =
@@ -307,7 +307,7 @@ if game.PlaceId == 7167319176 then
            
                     local plr = game.Players.LocalPlayer
                         local hum = plr.Character.HumanoidRootPart
-                        local speed = 300
+                        local speed = 80
 
                         local function tweenTo(Dest_CFrame)
                             local twn =
@@ -383,7 +383,7 @@ if game.PlaceId == 7167319176 then
 
                         local plr = game.Players.LocalPlayer
                         local hum = plr.Character.HumanoidRootPart
-                        local speed = 500
+                        local speed = 80
 
                         local function tweenTo(Dest_CFrame)
                             local twn =
