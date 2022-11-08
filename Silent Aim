@@ -30,7 +30,7 @@ function silentaim(fov)
         FOV_CIRCLE.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
         
         Options = {
-            Torso = "Head";
+            Torso = "HumanoidRootPart";
             Head = "Head";
         }
         
@@ -65,7 +65,7 @@ function silentaim(fov)
                 if SilentAim then
                     
                     for _, v in pairs(Players:GetPlayers()) do 
-                        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("Head") and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Humanoid").Health > 0 then
+                        if v ~= LocalPlayer and v.Character and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Humanoid").Health > 0 then
                             local Enemy = v.Character	
                             local CastingFrom = CFrame.new(Camera.CFrame.Position, Enemy[Options.Torso].CFrame.Position) * CFrame.new(0, 0, -4)
                             local RayCast = Ray.new(CastingFrom.Position, CastingFrom.LookVector * 9000)
