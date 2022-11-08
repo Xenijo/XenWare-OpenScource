@@ -323,7 +323,7 @@ if game.PlaceId == 7167319176 then
                             twn.Completed:Wait()
                         end
 
-                        tweenTo(CFrame.new(part.Position) * CFrame.new(0,5,0))
+                        tweenTo(CFrame.new(game:GetService("Workspace").Map.Jobs.InAndOut.FrieWork.Position) * CFrame.new(0,5,0))
 
                         wait(0.5)
 
