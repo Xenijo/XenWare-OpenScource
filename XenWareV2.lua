@@ -70,7 +70,7 @@ if game.PlaceId == 7167319176 then
     _G.ATM = false
     _G.FOV = 0
     _G.Prediction = (0.01)
-    local MaxDis = 10
+    local MaxDis = 20
     local prt = game:GetService("Workspace").Map.Jobs.Bartender.BottleGroup.Bottle
     local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
 
