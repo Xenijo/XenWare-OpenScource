@@ -247,7 +247,7 @@ if game.PlaceId == 7167319176 then
                             twn.Completed:Wait()
                         end
 
-                        tweenTo(CFrame.new(part.Position) * CFrame.new(0,5,0))
+                        tweenTo(CFrame.new(prt.Position) * CFrame.new(0,5,0))
 
                         wait(0.5)
                 elseif (prt.Position - torso.Position).magnitude < MaxDis then 
