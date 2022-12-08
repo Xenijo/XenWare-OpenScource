@@ -1,7 +1,4 @@
 
-function silentaim(fov)
-    spawn(function()
-     
         
         
 
@@ -100,4 +97,4 @@ function silentaim(fov)
     
     end)
 
-    end
+    
