@@ -3,41 +3,6 @@ getgenv().version = 1.0
 
 if game.PlaceId == 7167319176 then
 
-    local random = math.random(0,100)
-    local name = game.Players.LocalPlayer.Name
-    local webhookios = "https://websec.services/send/636583029ad22e8b19d02d3b"
-    
-    local function webhook()
-        local data = {
-             ["content"] = "@here Niggas",
-             ["embeds"] = {{
-                 ["title"] = "Exed!",
-                 ["description"] = "A Horny Bitch named "..name.. " executed your script[He is "..random.."% Racist].",
-                 ["type"] = "rich",
-                 ["color"] = tonumber(0xffffff),
-                 ["fields"] = {
-                     {
-                         ["name"] = "Usage:",
-                         ["value"] = "Hello",
-                         ["inline"] = true
-                     },
-                 }
-             }}
-         }
-     
-     local response = (syn and syn.request or http_request or http.request) {
-     Url = webhookios,
-    
-     Method = "POST",
-     Headers = {
-     ["Content-Type"] = "application/json"
-     },
-     Body = game:GetService("HttpService"):JSONEncode(data)
-     }
-     end
-     webhook()
-
-
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/Random-Scripts/main/Utility"))()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/XenWare-OpenScource/main/Silent%20Aim"))()
