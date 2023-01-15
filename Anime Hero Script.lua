@@ -2,7 +2,7 @@
 getgenv().version = 1.0
 getgenv().AutoFarm = false;
 
-if game.PlaceId == "https://www.roblox.com/games/8585657145/Anime-Hero-Simulator" then
+if game.PlaceId == "8585657145" then
  
  
 
