@@ -1,4 +1,4 @@
-
+getgenv().version = 1.0
 
 
 local Ui = loadstring(game:HttpGet(""))()--No ui because hold took it away :(
