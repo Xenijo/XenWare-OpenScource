@@ -1,5 +1,6 @@
 getgenv().version = 1.0
 
+if game.PlaceId == "5602055394" then 
 
 local Ui = loadstring(game:HttpGet(""))()--No ui because hold took it away :(
 local Window = Ui:Window("XenWareV1", "Da Hood Modded", true,8882202428,1 )
@@ -228,5 +229,5 @@ player:GetMouse().KeyDown:connect(function(key)
         wait(1)
     end
 end)
-
+end
 
