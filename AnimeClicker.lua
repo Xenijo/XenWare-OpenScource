@@ -1,5 +1,5 @@
 --//Functions
-
+getgenv().version = 1.0
 local table1 = {}
 
 local table2 = {}
