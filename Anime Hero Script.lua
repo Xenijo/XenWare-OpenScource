@@ -1,5 +1,5 @@
 --//Function
-getgenv().version = 1.0
+getgenv().version = 1.1
 getgenv().AutoFarm = false;
 
 if game.PlaceId == "8585657145" then
