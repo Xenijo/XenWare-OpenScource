@@ -1,5 +1,8 @@
 --//Functions
 getgenv().version = 1.0
+
+if game.PlaceId == "3102144307" then
+
 local table1 = {}
 
 local table2 = {}
@@ -185,3 +188,4 @@ b:Box("Box","number",function(value) -- "number" or "string"
 end)
 ]]
 b:DestroyGui()
+end
