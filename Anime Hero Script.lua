@@ -1,5 +1,5 @@
 --//Function
-getgenv().Version = 1.0
+getgenv().version = 1.0
 getgenv().AutoFarm = false;
 
 
