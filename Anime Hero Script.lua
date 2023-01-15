@@ -2,6 +2,9 @@
 getgenv().version = 1.0
 getgenv().AutoFarm = false;
 
+if game.PlaceId == "https://www.roblox.com/games/8585657145/Anime-Hero-Simulator" then
+ 
+ 
 
 local table1 = {}
 local table2 = {}
@@ -93,4 +96,4 @@ end)
 
 
 b:DestroyGui()
-
+end
