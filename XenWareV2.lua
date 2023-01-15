@@ -1,4 +1,4 @@
-
+getgenv().version = 1.0
 
 
 if game.PlaceId == 7167319176 then
