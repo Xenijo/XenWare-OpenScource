@@ -4,7 +4,7 @@ getgenv().version = 1.0
 if game.PlaceId == 7167319176 then
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/Random-Scripts/main/Utility"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/SlongHub/main/Holds-Sexy-Utility.lib.lua"))()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/XenWare-OpenScource/main/Silent%20Aim"))()
     local player = game:GetService("Players").LocalPlayer
 
