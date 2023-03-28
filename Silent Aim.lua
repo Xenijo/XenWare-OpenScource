@@ -1,8 +1,4 @@
-getgenv().version = 1.0
-        
-        
-
-        
+   
         local SilentAim = true
         local LocalPlayer = game:GetService("Players").LocalPlayer
         local Players = game:GetService("Players")
